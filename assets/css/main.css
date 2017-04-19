@@ -1,0 +1,146 @@
+body   {
+	background-image: url("../images/deepForest.jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+	top: 0;
+	height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+	overflow: auto;
+}
+
+  main {
+    flex: 1 0 auto;
+  }
+
+	h5{
+		font-family: 'Papyrus', cursive;
+	}
+
+	.brand-logo{
+		font-family: 'Papyrus';
+		margin-left: 20px;
+	}
+
+	#location {
+	margin-bottom: -5px;
+	margin-top: 10px;
+	font-weight: 900;
+	}
+
+	#location::placeholder {
+		font-weight: 400;
+	}
+
+	#location:focus, #location:visited {
+		border: 1px solid #43a047;
+		border-radius: 2px;
+		box-shadow: 0 1px 0 0 #43a047;
+		background-color: #9e9e9e;
+		color: #444;
+		font-weight: 900;
+		padding: 0 0 0 0px;
+	}
+
+	#location:focus::placeholder, #location:visited::placeholder {
+		color: #9e9e9e;
+	}
+
+
+nav .row {
+	margin-bottom: 0;
+	padding: 0;
+}
+nav {
+	margin-bottom: 10px;
+}
+
+.tabs-transparent {
+	text-align: center;
+}
+
+.tabs-transparent li {
+ display: inline-block;
+ float: none;border-radius: 5px;
+ padding: 10px 0;
+}
+
+.tabs .indicator {
+    background-color: #43a047;
+}
+#submit {
+	bottom: 30px;
+	right: 20px;
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+}
+
+#weather-slider {
+	margin-bottom: 10px;
+	 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#suggestions {
+	margin: 0;
+	border: none;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.suggestions-list, .suggestions-list .collection-item, .suggestions-list .collection-header, {
+	margin: 0;
+	border: none;
+}
+
+.suggestions-list {
+	margin: 0;
+}
+.collapsible-body {
+	padding: 0;
+}
+
+
+footer {
+	margin-bottom: -5px;
+	box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -1px 5px 0 rgba(0,0,0,0.12), 0 -3px 1px -2px rgba(0,0,0,0.2);
+}
+
+
+.footerImages	{
+	height: 25px;
+ 	margin: 10px 15px 5px 15px;
+}
+
+
+@media only screen and (max-width: 960px) {
+	 main {
+		 margin-left: -1px;
+		 margin-right: -1px;
+		 margin-bottom: 0 !important;
+	 }
+
+	#submit {
+		bottom: 45px;
+		right: 5px;
+	}
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		margin-bottom: 0;
+	}
+
+	#suggestions {
+		margin: -10px 0 0 0;
+		box-shadow: none;
+	}
+
+	.brand-logo {
+		display: none !important;
+
+	}
+}
